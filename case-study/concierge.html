@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Case study showcasing VIP concierge coordination and high-touch client support."
+    content="Portfolio case study showcasing VIP concierge coordination and high-touch client support."
   />
 
   <link rel="stylesheet" href="../style.css" />
@@ -21,15 +21,15 @@
 
     .case-nav {
       padding: 28px 0;
-      border-bottom: 1px solid rgba(0,0,0,0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .case-back {
+      color: inherit;
       font-size: 13px;
       letter-spacing: 0.08em;
-      text-transform: uppercase;
       text-decoration: none;
-      color: inherit;
+      text-transform: uppercase;
     }
 
     .case-hero {
@@ -46,30 +46,40 @@
     }
 
     .case-title {
-      max-width: 900px;
+      max-width: 950px;
       margin: 0 0 28px;
       font-size: clamp(42px, 6vw, 78px);
-      line-height: 0.98;
       font-weight: 500;
+      line-height: 0.98;
     }
 
     .case-intro {
-      max-width: 760px;
+      max-width: 800px;
+      margin: 0;
       font-size: 18px;
       line-height: 1.8;
       opacity: 0.75;
     }
 
-    .case-image {
-      margin: 20px 0 80px;
-      overflow: hidden;
-      background: #e8e6e1;
+    .case-visual {
+      margin: 10px 0 80px;
     }
 
-    .case-image img {
+    .case-visual img {
       display: block;
       width: 100%;
       height: auto;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.07);
+    }
+
+    .case-visual figcaption {
+      max-width: 850px;
+      margin-top: 15px;
+      font-size: 12px;
+      line-height: 1.7;
+      letter-spacing: 0.02em;
+      opacity: 0.55;
     }
 
     .case-content {
@@ -81,7 +91,7 @@
       grid-template-columns: 0.7fr 1.3fr;
       gap: 80px;
       padding: 55px 0;
-      border-top: 1px solid rgba(0,0,0,0.1);
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .case-section-title {
@@ -95,13 +105,13 @@
     .case-copy h2 {
       margin: 0 0 22px;
       font-size: clamp(27px, 3vw, 40px);
-      line-height: 1.15;
       font-weight: 500;
+      line-height: 1.15;
     }
 
     .case-copy p {
-      margin: 0 0 18px;
       max-width: 760px;
+      margin: 0 0 18px;
       font-size: 16px;
       line-height: 1.85;
       opacity: 0.78;
@@ -115,7 +125,7 @@
 
     .case-points li {
       padding: 14px 0;
-      border-bottom: 1px solid rgba(0,0,0,0.08);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
       font-size: 15px;
       line-height: 1.6;
     }
@@ -128,8 +138,8 @@
     .case-result-box {
       margin-top: 35px;
       padding: 30px;
-      border: 1px solid rgba(0,0,0,0.12);
-      background: rgba(255,255,255,0.45);
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      background: rgba(255, 255, 255, 0.45);
     }
 
     .case-result-box strong {
@@ -144,14 +154,21 @@
       margin: 0;
     }
 
+    .case-note {
+      margin-top: 22px;
+      font-size: 12px;
+      line-height: 1.7;
+      opacity: 0.55;
+    }
+
     .case-footer {
       padding: 60px 0;
-      border-top: 1px solid rgba(0,0,0,0.1);
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .case-footer a {
-      text-decoration: none;
       color: inherit;
+      text-decoration: none;
     }
 
     @media (max-width: 768px) {
@@ -165,8 +182,12 @@
         padding: 45px 0;
       }
 
-      .case-image {
+      .case-visual {
         margin-bottom: 50px;
+      }
+
+      .case-visual figcaption {
+        font-size: 11px;
       }
     }
   </style>
@@ -196,22 +217,31 @@
         </h1>
 
         <p class="case-intro">
-          High-touch concierge work is built on responsiveness, discretion and
-          precision. Supporting an international VIP clientele meant handling
-          complex requests while keeping communication professional,
-          expectations clear and every detail carefully coordinated.
+          High-touch concierge work is built on responsiveness, discretion,
+          precision, and calm coordination. Supporting an international VIP
+          clientele meant handling complex requests while keeping
+          communication professional, expectations clear, and every detail
+          carefully coordinated.
         </p>
 
       </div>
     </section>
 
     <div class="container">
-      <div class="case-image">
+      <figure class="case-visual">
+
         <img
           src="../images/project-concierge.png"
-          alt="VIP concierge coordination case study"
+          alt="Illustrative VIP concierge operations dashboard showing global client requests, transportation coordination, time zones, priority requests, and service categories"
         />
-      </div>
+
+        <figcaption>
+          Illustrative portfolio visualization demonstrating how global
+          concierge requests, transportation coordination, priorities, time
+          zones, and next actions can be monitored from one operational view.
+        </figcaption>
+
+      </figure>
     </div>
 
     <section class="case-content">
@@ -230,14 +260,15 @@
             </h2>
 
             <p>
-              VIP clients often expect fast responses, accurate coordination
+              VIP clients often expect fast responses, accurate coordination,
               and a high degree of discretion.
             </p>
 
             <p>
-              Requests could involve multiple parties, changing requirements
-              and tight timelines, making strong communication and careful
-              follow-through essential.
+              Requests could involve multiple parties, changing requirements,
+              travel disruptions, transportation logistics, and tight
+              timelines, making strong communication and careful follow-through
+              essential.
             </p>
 
           </div>
@@ -278,25 +309,36 @@
         <div class="case-grid">
 
           <div>
-            <h2 class="case-section-title">Approach</h2>
+            <h2 class="case-section-title">Operational Approach</h2>
           </div>
 
           <div class="case-copy">
 
             <h2>
-              Anticipating details before they became client problems
+              Managing every request around urgency, dependencies, and the next action
             </h2>
 
             <p>
-              Strong concierge service depends on anticipating what could go
-              wrong and addressing it before it affects the client experience.
+              In concierge operations, knowing that a request exists is not
+              enough. The important questions are what is happening now, what
+              could delay the guest, who is responsible for the next step, and
+              when intervention is required.
             </p>
 
             <p>
-              I focused on maintaining visibility over each request, confirming
-              important details, communicating clearly and escalating issues
-              early when needed.
+              I worked with a priority-based approach that kept transportation
+              status, flight changes, chauffeur coordination, guest
+              communication, and pending actions visible at the same time.
             </p>
+
+            <ul class="case-points">
+              <li>Real-time request and status tracking</li>
+              <li>Priority identification for time-sensitive requests</li>
+              <li>Flight and transportation coordination</li>
+              <li>Cross-time-zone communication awareness</li>
+              <li>Vendor and chauffeur follow-up</li>
+              <li>Clear next actions for unresolved requests</li>
+            </ul>
 
           </div>
 
@@ -316,19 +358,25 @@
 
             <p>
               Structured coordination and dependable follow-through helped
-              ensure clients received responsive and professional support even
-              when requests were complex or time-sensitive.
+              support responsive and professional service even when requests
+              were complex, urgent, or affected by changing circumstances.
             </p>
 
             <div class="case-result-box">
               <strong>Key Outcome</strong>
 
               <p>
-                Delivered consistent white-glove service while coordinating
-                complex requests for international and high-value clients.
+                Supported consistent white-glove service through organized
+                coordination, clear communication, and disciplined follow-up
+                across international client requests.
               </p>
-
             </div>
+
+            <p class="case-note">
+              Portfolio dashboard data shown above is fictional and is included
+              only to demonstrate an example operating system based on the type
+              of responsibilities handled in the role.
+            </p>
 
           </div>
 
